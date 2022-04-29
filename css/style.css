@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('../img/bg-light-4837.png');
+    background: #373738;
+    color: white;
+}
+.photo{
+    margin: 0 auto;
+    margin-top: -100px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url(../img/user.jpg);
+    background-size: 100%;
+    
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.login-text {
+    color: #fff;
+    font-size: 15px;
+}
+.login-text a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #3498db;
+}
+.login-text a:hover{
+    color: #2ecc71;
+}
+
+
+.box label{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    outline: none;
+    color: white;
+}
+
+.box input[type = "email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "email"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+/* Добавление Изображение Профиля в регистрации */
+.box input[type = "file"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "file"]:hover{
+    border: 2px solid #2ecc71;
+    transition: 0.25s;
+    width: 280px;
+}
+
+.msg{
+    color: red;
+}
+/* ===== Дата (Сегодня) ===== */
+.date{
+    float: right;
+    background: #191919;
+    padding: 10px 20px;
+    margin-right: 25px;
+    margin-top: 5px; 
+    border: 1px solid #2ecc71; 
+}
+.date:hover{
+    background: #3498db;
+    transition: 0.5s;
+}
+/* / ===== Дата (Сегодня) ===== */
+
+
+
+
+
+
+
+
+

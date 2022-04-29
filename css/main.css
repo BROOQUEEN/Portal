@@ -1,0 +1,187 @@
+*{padding: 0;margin: 0;}
+
+header{
+	max-height: 100px;
+	background: #191919;
+	border-bottom: 2px solid #3498db;
+	color: #fff;
+	
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+/* Шапка */
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+/* Логотип */
+.header_logo{
+	color: #fff;
+	font-size: 20px;
+	border: 0;
+	background: none;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 14px 10px;
+	outline: none;
+	color: white;
+	transition: 0.25s;
+}
+.header_logo:hover{
+	color: #2ecc71;
+}
+/* / Логотип */
+
+
+
+/* Список */
+.header_lists {
+	-webkit-display: flex;
+	list-style: none;
+	display: flex;
+	list-style: none;
+}
+.header_list {
+	color: #fff;
+	font-size: 25px;
+	border: 0;
+	background: none;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	/* border: 2px solid #3498db; */
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	transition: 0.25s;
+}
+/* .header_list {
+	color: #fff;
+	font-size: 25px;
+	border: 0;
+	background: none;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	transition: 0.25s;
+} */
+.header_list:hover{
+	background: #3498db;
+}
+/* / Список */
+
+
+
+
+/* Профиль */
+.header_profile {
+	display: flex;
+	align-items: center;
+}
+.header_profile_img {
+	border: 2px solid #3498db;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 100%;
+	margin-right: 10px;
+
+	position: relative;
+   overflow:hidden;
+	background-image: url(../img/user.jpg);
+	background-size: cover;
+
+}
+.header_profile_img:hover{
+	border: 2px solid #2ecc71;
+}
+.header_profile_img img{
+	position: absolute;
+   top: 50%;
+   left: 50%;
+   transform:translate(-50%,-50%);
+   object-fit: cover;
+	width: 50px;
+	height: 50px;
+}
+.header_profile_login {
+
+}
+.header_profile_logout {
+	color: white;
+	text-decoration: none;
+}
+.header_profile_logout:hover{
+	color: red;
+}
+/* / Профиль */
+
+/* / Шапка */
+
+
+/* Секция Заметки */
+.section-notes {
+	margin-top: 50px;
+	margin-left: 50px;
+	padding: 20px;
+	background: #191919;
+	border-bottom: 2px solid #3498db;
+	color: #fff;
+	max-width: 300px;
+}
+.notes__title{
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #3498db;
+}
+.notes__lists{
+	padding: 30px 0;
+	padding-left: 15px;
+}
+.notes__lists li{
+	list-style: none;
+	padding: 15px;
+	margin-bottom: 10px;
+	background-color: #3498db;
+	border: 1px solid silver;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.notes__lists li:hover{
+	background: #2ecc71;
+}
+.notes__lists li button{
+	border: 0;
+	padding: 5px 10px;
+	max-height: 25px;
+	color: white;
+	font-size: 13px;
+	background: #db5757;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.notes__lists li button:hover{
+	background: #b13d3d;
+}
+/* Секция Заметки */
+
+
+
+

@@ -1,0 +1,70 @@
+body{
+	color: white;
+}
+.section_profile {
+	display: block;
+	margin: 100px auto;
+	width: 300px;
+	padding: 40px;
+	background: #191919;
+}
+.section_profile p{
+	margin-left: 10px;
+	
+	font-size: 16px;
+}
+.profile_photo {
+	position: relative;
+   overflow:hidden;
+	width: 300px;
+	height: 300px;
+	background-image: url(../img/user.jpg);
+	background-size: cover;
+}
+.profile_photo img{
+	position: absolute;
+   top: 50%;
+   left: 50%;
+   transform:translate(-50%,-50%);
+   width: 300px;
+   height: 300px;
+   object-fit: cover;
+
+}
+.profile_full_name {
+	
+	
+}
+.profile_login {
+	
+}
+.profile_email {
+	
+}
+.profile_user_right {
+}
+.profile_link {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	transition: 0.25s;
+	cursor: pointer;
+
+	text-decoration: none;
+}
+.profile_link:hover{
+	background: #2ecc71;
+}
+.blue{
+	border: 2px solid #3498db;
+}
+.blue:hover{
+	background: #3498db;
+
+}
