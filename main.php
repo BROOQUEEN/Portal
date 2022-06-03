@@ -43,12 +43,10 @@
 
 
 
-
 <!-- Все заметки -->
 <section class="section-notes">
-<div>
-<h3 class="notes__title">Все заметки</h3>
 	<div class="notes__lists">
+	<h3 class="notes__title">Все заметки</h3>
 		<?php
 		require 'connectionDB-to-do.php';
 
@@ -60,11 +58,19 @@
 		echo "</ol>";
 		?>
 	</div>
-</div>
-<div>123</div>
+	<div class="changes-block">
+		<h3 class="changes-block__title">
+			Список изменений
+		</h3>
+		<ul class="changes__lists">
+			<li>1. Изменение 1</li>
+			<li>2. Изменение 2</li>
+			<li>3. Изменение 3</li>
+		</ul>
+	</div>
 </section>
 
-<div class="container">
+<div class="container add-todo-block">
 	<h2>Список дел</h2>
 	<form action="/pages/add-note.php" method="post">
 		<input type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">

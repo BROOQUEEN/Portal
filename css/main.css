@@ -136,13 +136,13 @@ header{
 
 /* Секция Заметки */
 .section-notes {
-	margin-top: 50px;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
 	margin-left: 50px;
-	padding: 20px;
-	background: #191919;
 	border-bottom: 2px solid #3498db;
 	color: #fff;
-	max-width: 300px;
 }
 .notes__title{
 	text-align: center;
@@ -150,7 +150,6 @@ header{
 	border-bottom: 1px solid #3498db;
 }
 .notes__lists{
-	padding: 30px 0;
 	padding-left: 15px;
 }
 .notes__lists li{
@@ -180,8 +179,35 @@ header{
 .notes__lists li button:hover{
 	background: #b13d3d;
 }
+
+.add-todo-block {
+	margin-left: 60px;
+}
 /* Секция Заметки */
 
 
+/* Список изменений */
 
+.changes-block {
+	display: flex;
+	flex-direction: column;
+	width: 370px;
+	padding-right: 50px;
+}
 
+.changes__lists li{
+	min-height: 25px;
+	list-style: none;
+	padding: 15px;
+	margin-bottom: 10px;
+	background-color: burlywood;
+	border: 1px solid silver;
+	border-radius: 5px;
+
+	color: black;
+}
+
+.changes-block__title {
+	margin-bottom: 10px;
+	align-self: center;
+}
