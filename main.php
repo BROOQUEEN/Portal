@@ -46,7 +46,8 @@
 
 <!-- Все заметки -->
 <section class="section-notes">
-	<h3 class="notes__title">Все заметки</h3>
+<div>
+<h3 class="notes__title">Все заметки</h3>
 	<div class="notes__lists">
 		<?php
 		require 'connectionDB-to-do.php';
@@ -59,6 +60,8 @@
 		echo "</ol>";
 		?>
 	</div>
+</div>
+<div>123</div>
 </section>
 
 <div class="container">
