@@ -2,20 +2,26 @@ body{
 	color: white;
 }
 .section_profile {
+	right: 0px;
+	position: absolute;
 	display: block;
-	margin: 100px auto;
 	width: 300px;
 	padding: 40px;
 	background: #191919;
+	transition: transform 1s ease-in-out;
 }
+
+.section-profile-hide {
+	transform: translateX(500px);
+}
+
 .section_profile p{
 	margin-left: 10px;
-	
 	font-size: 16px;
 }
 .profile_photo {
 	position: relative;
-   overflow:hidden;
+  	overflow:hidden;
 	width: 300px;
 	height: 300px;
 	background-image: url(../img/user.jpg);
@@ -31,18 +37,7 @@ body{
    object-fit: cover;
 
 }
-.profile_full_name {
-	
-	
-}
-.profile_login {
-	
-}
-.profile_email {
-	
-}
-.profile_user_right {
-}
+
 .profile_link {
 	border: 0;
 	background: none;
