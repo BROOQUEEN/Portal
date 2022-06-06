@@ -43,7 +43,7 @@
 
 				<div class="header_profile">
 					<div class="header_profile_img">
-						<a href="profile.php"><img  src="<?= $_SESSION['user']['avatar'] ?>" alt=""></a>
+						<a href="#"><img  src="<?= $_SESSION['user']['avatar'] ?>" alt=""></a>
 					</div>
 					<div class="header_profile_name">
 						<div class="header_profile_full_name">Имя: <?= $_SESSION['user']['full_name'] ?></div>
