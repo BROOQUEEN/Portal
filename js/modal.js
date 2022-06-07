@@ -1,9 +1,11 @@
-function func() {
-	const profileIcon = document.querySelector('.header_profile_img');
-	const profileSection = document.querySelector('.section_profile');
-	profileIcon.addEventListener('click', () => {
-		profileSection.classList.toggle('section-profile-hide');
-	})
-};
+// Анимация выезда для модального окна
+const profileIcon = document.querySelector('.header_profile_img');
+const profileSection = document.querySelector('.section_profile');
+const nameFieldModal = document.querySelector('.profile_full_name');
+nameFieldModal.contentEditable = 'true';
 
-func();
+profileIcon.addEventListener('click', () => {
+	profileSection.classList.toggle('section-profile-hide');
+});
+
+

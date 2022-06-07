@@ -58,7 +58,6 @@ header{
 }
 .header_list {
 	color: #fff;
-	font-size: 25px;
 	border: 0;
 	background: none;
 	display: block;
@@ -70,6 +69,7 @@ header{
 	outline: none;
 	color: white;
 	transition: 0.25s;
+	font-size: 20px;
 }
 /* .header_list {
 	color: #fff;
@@ -145,7 +145,6 @@ header{
 	justify-content: space-between;
 	margin-top: 60px;
 	margin-left: 50px;
-	border-bottom: 2px solid #3498db;
 	color: #fff;
 }
 .notes__title{
@@ -185,7 +184,7 @@ header{
 }
 
 .add-todo-block {
-	margin-left: 60px;
+	padding: 10px 0;
 }
 /* Секция Заметки */
 
@@ -214,4 +213,31 @@ header{
 .changes-block__title {
 	margin-bottom: 10px;
 	align-self: center;
+}
+
+/* Добавить дело */
+
+.add-notes__input {
+	padding: 7px;
+	margin-right: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.add-notes__input:hover {
+	background-color: #2ecc71;
+}
+
+.add-notes__title {
+	margin-bottom: 10px;
+}
+
+.add-notes__button {
+	padding: 7px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.add-notes__button:hover {
+	background-color: #db5757;
 }

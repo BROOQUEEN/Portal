@@ -51,8 +51,7 @@
             <p>Права:</p>
             <p></p>
         </div>
-        <a class="profile_link" href="\">Главная страница</a>
-        <a class="profile_link" href="profile-edit.php">Изменить</a>
+        <a class="profile_link">Изменить</a>
         <a class="profile_link blue" href="vendor/logout.php" class="logout">Выход</a>
 </div>
 
@@ -76,7 +75,7 @@
 <!-- Все заметки -->
 <section class="section-notes">
 	<div class="notes__lists">
-	<h3 class="notes__title">Все заметки</h3>
+	<h2 class="notes__title">Все заметки</h2>
 		<?php
 		require 'connectionDB-to-do.php';
 
@@ -87,11 +86,18 @@
 		};
 		echo "</ol>";
 		?>
+		<div class="add-todo-block">
+		<h3 class="add-notes__title">Добавить дело</h3>
+		<form action="/pages/add-note.php" method="post">
+			<input class="add-notes__input" type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">
+			<button class="add-notes__button" type="submit" name="sendTask" class="btn btn-success">Отправить</button>
+		</form>
+		</div>
 	</div>
 	<div class="changes-block">
-		<h3 class="changes-block__title">
+		<h2 class="changes-block__title">
 			Список изменений
-		</h3>
+		</h2>
 		<ul class="changes__lists">
 			<li>1. Изменение 111</li>
 			<li>2. Изменение 222</li>
@@ -100,14 +106,6 @@
 	</div>
 </section>
 
-<div class="container add-todo-block">
-	<h2>Список дел</h2>
-	<form action="/pages/add-note.php" method="post">
-		<input type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">
-		<button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
-	</form>
-	<a class="profile_link blue" href="/" class="logout">Главная страница</a>
-</div>
 </main>
 <!-- / Все заметки -->
 
