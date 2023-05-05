@@ -31,31 +31,7 @@
 	require_once "components/header.php";
 ?>
 <main class="main">
-	<!-- Модалка с профилем -->
-<div class="section_profile section-profile-hide">
-        <div class="profile_photo">
-            <img  src="<?= $_SESSION['user']['avatar'] ?>" alt="">
-        </div>
-        <div class="profile_full_name">
-            <p>Фио: <?= $_SESSION['user']['full_name'] ?></p>
-        </div>
-        <div class="profile_login">
-            <p>Логин: <?= $_SESSION['user']['login'] ?></p>
-            <p></p>
-        </div>
-        <div class="profile_email">
-            <p>Почта: <?= $_SESSION['user']['email'] ?></p>
-            <p></p>
-        </div>
-        <div class="profile_user_right">
-            <p>Права:</p>
-            <p></p>
-        </div>
-        <a class="profile_link">Изменить</a>
-        <a class="profile_link blue" href="vendor/logout.php" class="logout">Выход</a>
-</div>
 
-	<!-- Модалка с профилем -->
 
 <!-- Сегодняшняя дата -->
 <div class="date">

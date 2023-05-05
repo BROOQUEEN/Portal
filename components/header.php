@@ -26,3 +26,44 @@
         </div>
     </div>
 </header>
+
+	<!-- Модалка с профилем -->
+    <section class="section_profile section-profile-hide">
+        <div class="profile__container">
+            <div class="section__content">
+
+            
+            <div class="profile-block__left">
+                <div class="profile_photo">
+                    <img  src="<?= $_SESSION['user']['avatar'] ?>" alt="">
+                </div>
+                <div class="profile_full_name">
+                    <p>Фио: <?= $_SESSION['user']['full_name'] ?></p>
+                </div>
+                <div class="profile_login">
+                    <p>Логин: <?= $_SESSION['user']['login'] ?></p>
+                    <p></p>
+                </div>
+                <div class="profile_email">
+                    <p>Почта: <?= $_SESSION['user']['email'] ?></p>
+                    <p></p>
+                </div>
+                <div class="profile_user_right">
+                    <p>Права:</p>
+                    <p></p>
+                </div>
+                <a class="profile_link">Изменить</a>
+                <a class="profile_link blue" href="vendor/logout.php" class="logout">Выход</a>
+            </div>
+            
+            <div class="profile-block__right">
+                <p class="test">
+                    ghfg
+                </p>
+                
+            </div>
+         </div>
+        </div>
+    </section>
+
+	<!-- Модалка с профилем -->
