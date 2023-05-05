@@ -50,6 +50,7 @@
 
 <!-- Все заметки -->
 <section class="update">
+	<button class="update__add">+</button>
 	<h3 class="update__title">Обновления</h3>
 	<ul class="update__lists">
 		<?php
@@ -58,8 +59,8 @@
 					?>
 						<li class="update__item">
 							<div class="update__item-top">
-								<p class="update__data"><?php echo $table['update_date'];?></p>
 								<p class="update__text-title"><?php echo $table['update_title'];?></p>
+								<p class="update__data"><?php echo $table['update_date'];?></p>
 							</div>
 							<div class="update__item-bottom">
 								<p class="update__text"><?php echo $table['update_text'];?></p>

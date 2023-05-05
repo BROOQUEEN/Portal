@@ -5,9 +5,9 @@
             
             <nav class="header__navigation">
                 <ul class="header__lists">
-                    <li class="header__item"><a href="./pages/notes.php" class="header__link">Заметки</a></li>
-                    <li class="header__item"><a href="" class="header__link">Обновления</a></li>
-                    <li class="header__item"><a href="" class="header__link">Редактировать</a></li>
+                    <li class="header__item"><a href="./pages/notes.php" class="header__link">Бубуйня 1</a></li>
+                    <li class="header__item"><a href="" class="header__link">Бубуйня 2</a></li>
+                    <li class="header__item"><a href="" class="header__link">Бубуйня 3</a></li>
                 </ul>
             </nav>
             
