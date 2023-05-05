@@ -41,28 +41,36 @@
 </div>
 <div class="date">
 	<?php
-	  echo ("Версия v.1.1");
+	  echo ("Версия v.1.3");
 	?>
 </div>
 <!-- / Сегодняшняя дата -->
 
-
+<div class="container">
 
 <!-- Все заметки -->
-<section class="section-notes">
-	<div class="notes__lists">
-	<h2 class="notes__title">Все заметки</h2>
+<section class="update">
+	<h3 class="update__title">Обновления</h3>
+	<ul class="update__lists">
 		<?php
-		require 'connectionDB-to-do.php';
+			$table_updates = mysqli_query($connect, "SELECT * FROM `updates`");
+				while ($table = mysqli_fetch_assoc($table_updates)) {
+					?>
+						<li class="update__item">
+							<div class="update__item-top">
+								<p class="update__data"><?php echo $table['update_date'];?></p>
+								<p class="update__text-title"><?php echo $table['update_title'];?></p>
+							</div>
+							<div class="update__item-bottom">
+								<p class="update__text"><?php echo $table['update_text'];?></p>
+							</div>
+						</li>
+					<?php
+				}?>
+	</ul>
+<!-- / Все заметки -->
 
-		echo "<ol>";
-		$query = $pdo->query('SELECT * FROM `tasks` ORDER BY `id` DESC');
-		while($row = $query->fetch(PDO::FETCH_OBJ)) {
-			echo '<li><b>'.$row->task.'</b><a href="/delete-note.php?id='.$row->id.'"><button>X</button></a></li>';
-		};
-		echo "</ol>";
-		?>
-		<div class="add-todo-block">
+		<!-- <div class="add-todo-block">
 		<h3 class="add-notes__title">Добавить дело</h3>
 		<form action="/pages/add-note.php" method="post">
 			<input class="add-notes__input" type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">
@@ -79,9 +87,9 @@
 			<li>2. Изменение 222</li>
 			<li>3. Изменение 333</li>
 		</ul>
-	</div>
+	</div> -->
 </section>
-
+</div>
 </main>
 <!-- / Все заметки -->
 

@@ -6,7 +6,7 @@
             <nav class="header__navigation">
                 <ul class="header__lists">
                     <li class="header__item"><a href="./pages/notes.php" class="header__link">Заметки</a></li>
-                    <li class="header__item"><a href="" class="header__link">Сотрудники</a></li>
+                    <li class="header__item"><a href="" class="header__link">Обновления</a></li>
                     <li class="header__item"><a href="" class="header__link">Редактировать</a></li>
                 </ul>
             </nav>
