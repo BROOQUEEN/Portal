@@ -17,7 +17,7 @@
 <body>
 
     <!--  Форма авторизации  -->
-    <form class="box" action="vendor/signin.php" method="post">
+    <form class="box" action="/vendor/signin.php" method="post">
         <div class="photo"></div>
         <h1>Авторизация</h1>
         <input type="text" name="login" placeholder="Имя пользователя">

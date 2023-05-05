@@ -5,7 +5,7 @@
         header('Location: /');
     }
 
-	 require_once 'vendor/connect.php';
+	 require_once './vendor/connect.php';
 ?>
 
 <!DOCTYPE html>

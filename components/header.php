@@ -1,13 +1,14 @@
-<header>
+<header class="header" id="header">
     <div class="container">
-        <div class="header" id="header">
-            <a class="header_logo" href="main.php" alt="Перейти на главную страницу">Главная</a>
+        <div class="header__content">
+            <a class="header__logo" href="main.php" alt="Перейти на главную страницу">Главная</a>
             
-            
-            <nav class="header_lists">
-                <a href="pages/notes.php" class="header_list">Заметки</a>
-                <button href="" class="header_list" id="open-modal-read">Сотрудники</button>
-                <button href="" class="header_list" id="open-modal-update">Редактировать</button>
+            <nav class="header__navigation">
+                <ul class="header__lists">
+                    <li class="header__item"><a href="./pages/notes.php" class="header__link">Заметки</a></li>
+                    <li class="header__item"><a href="" class="header__link">Сотрудники</a></li>
+                    <li class="header__item"><a href="" class="header__link">Редактировать</a></li>
+                </ul>
             </nav>
             
 
