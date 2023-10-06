@@ -27,7 +27,7 @@
     
 
     <!-- Секция Профиль -->
-    <div class="section_profile">
+    <section class="section_profile">
         <div class="profile_photo">
             <img  src="<?= $_SESSION['user']['avatar'] ?>" alt="">
         </div>
@@ -49,8 +49,8 @@
         <a class="profile_link" href="\">Главная страница</a>
         <a class="profile_link" href="profile-edit.php">Изменить</a>
         <a class="profile_link blue" href="vendor/logout.php" class="logout">Выход</a>
-        
-    </div>
+
+    </section>
     <!-- / Секция Профиль -->
 
     <!-- Новости -->

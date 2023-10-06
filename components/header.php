@@ -1,12 +1,12 @@
 <header class="header" id="header">
-    <div class="container">
+    <div class="header-container">
         <div class="header__content">
             <a class="header__logo" href="main.php" alt="Перейти на главную страницу">Главная</a>
             
             <nav class="header__navigation">
                 <ul class="header__lists">
                     <li class="header__item"><a href="./pages/notes.php" class="header__link">Бубуйня 1</a></li>
-                    <li class="header__item"><a href="" class="header__link">Бубуйня 2</a></li>
+                    <li class="header__item"><a href="./pages/users.php" class="header__link" id="modal-users">Сотрудники</a></li>
                     <li class="header__item"><a href="" class="header__link">Бубуйня 3</a></li>
                 </ul>
             </nav>

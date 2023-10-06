@@ -19,6 +19,9 @@ body {
 	overflow: hidden;
 	height: 100%;
 }
+button {
+	border: none;
+}
 /* =========== Шапка сайта ========== */
 .header{
 	height: 80px;
@@ -26,9 +29,13 @@ body {
 	border-bottom: 2px solid #3498db;
 	color: #fff;
 }
-
+.header-container {
+	width: 1366px;
+	margin: 0 auto;
+	height: 100%;
+}
 .container{
-	width: 80%;
+	width: 1000px;
 	margin: 0 auto;
 	height: 100%;
 	
@@ -195,33 +202,39 @@ body {
 /* Список изменений */
 
 .update {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	margin-top: 25px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 370px;
-	margin-top: 50px;
 	padding: 25px;
-	background-color: #0e0f442a;
-	border-radius: 25px;
-	width: 500px;
-	position: relative;
+	background-color: #00000028;
+	border-radius: 0;
+	width: 400px;
 }
 .update__add {
 	position: absolute;
-	top: 0px;
-	right: 20px;
+	top: 27px;
+	right: 110px;
 	color: red;
 	background-color: white;
 	border-radius: 100%;
-	width: 30px;
-	height: 30px;
-	font-size: 35px;
+	width: 20px;
+	height: 20px;
+	font-size: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+	cursor: pointer;
+	opacity: 0.7;
+}
+.update__add:hover {
+	opacity: 1;
 }
 .update__lists {
+	margin-top: 10px;
 	width: inherit;
 	display: flex;
 	flex-direction: column-reverse;
@@ -241,7 +254,7 @@ body {
 .update__item-top {
 	display: flex;
 	justify-content: space-between;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 700;
 }
 .update__data {
@@ -249,6 +262,10 @@ body {
 }
 .update__text-title {
 	max-width: 60%;
+	font-size: 16px;
+}
+.update__text {
+	font-size: 14px;
 }
 .update__item-bottom {
 	margin-top: 10px;

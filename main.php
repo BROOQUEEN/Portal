@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/tables.css">
 	<link rel="stylesheet" href="css/profile.css">
 	<script defer type="text/javascript" src="js/modal.js">
+	<script defer type="text/javascript" src="js/functions.js">
 </script>
 	<title>База данных</title>
 </head>
@@ -31,6 +32,13 @@
 	require_once "components/header.php";
 ?>
 <main class="main">
+<div class="container">
+	<?php
+		require_once "pages/users.php";
+	?>
+</div>
+
+
 
 
 <!-- Сегодняшняя дата -->
@@ -50,7 +58,7 @@
 
 <!-- Все заметки -->
 <section class="update">
-	<button class="update__add">+</button>
+	<button class="update__add" id="update__add">+</button>
 	<h3 class="update__title">Обновления</h3>
 	<ul class="update__lists">
 		<?php
@@ -71,28 +79,76 @@
 	</ul>
 <!-- / Все заметки -->
 
-		<!-- <div class="add-todo-block">
-		<h3 class="add-notes__title">Добавить дело</h3>
-		<form action="/pages/add-note.php" method="post">
-			<input class="add-notes__input" type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">
-			<button class="add-notes__button" type="submit" name="sendTask" class="btn btn-success">Отправить</button>
-		</form>
-		</div>
-	</div>
-	<div class="changes-block">
-		<h2 class="changes-block__title">
-			Список изменений
-		</h2>
-		<ul class="changes__lists">
-			<li>1. Изменение 111</li>
-			<li>2. Изменение 222</li>
-			<li>3. Изменение 333</li>
-		</ul>
-	</div> -->
 </section>
 </div>
+
+<section class="new-update" id="new-update">
+	<div class="new-update__window">
+		<p class="new-update__name">Название</p>
+		<p class="new-update__text">Новые обновления подкатили</p>
+		<button class="new-update__btn-close" id="new-update__btn-close">X</button>
+	</div>
+	<div class="overlay"></div>
+</section>
+<style>
+	.new-update {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: black;
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;
+	}
+	.new-update__window {
+		position: relative;
+		padding: 30px;
+		z-index: 2;
+		width: 550px;
+		border-radius: 10px;
+		background-color: white;
+		box-shadow: 0 10px 15px rgba(0,0,0 .4);
+	}
+	.new-update__name {
+	}
+	.new-update__text {
+	}
+	.new-update .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.7;
+		z-index: 0;
+	}
+	.new-update__btn-close {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 20px;
+		border-radius: 100%;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		opacity: 0.7;
+	}
+	.new-update__btn-close:hover {
+		opacity: 1;
+	}
+</style>
+
+
 </main>
-<!-- / Все заметки -->
+
 
 
 </body>

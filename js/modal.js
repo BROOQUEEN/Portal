@@ -9,3 +9,16 @@ profileIcon.addEventListener('click', () => {
 });
 
 
+var modal_Updates = document.getElementById('new-update');
+var modal_Update_btnClose = document.getElementById('new-update__btn-close');
+
+var modal_Open_Updates = document.getElementById('update__add');
+
+modal_Open_Updates.onclick = function () {
+    modal_Updates.style.display = 'flex';
+}
+modal_Update_btnClose.onclick = function () {
+    modal_Updates.style.display = 'none';
+}
+
+

@@ -34,6 +34,21 @@
     </form>
     <!--  / Форма авторизации  -->
     
+
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+        <!-- AJAX -->
+        <script>
+            $.ajax({
+                method: "POST",
+                url: "some.php",
+                data: { name: "John", location: "Boston" }
+            })
+            .done(function( msg ) {
+                alert( "Data Saved: " + msg );
+            });
+        </script>
 </body>
 </html>
 
